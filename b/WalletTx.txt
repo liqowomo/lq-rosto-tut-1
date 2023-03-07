@@ -1,0 +1,27 @@
+[93m 
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+Transaction Details for 
+Wallet     : 0x326C885267bfC530964e49a76aD8d9A6FE871F9C
+PrivateKey : 0x45a8e7ed4f2f3bfbaf433fc7ef471cdf61e91d4135249b16aa51c39562b0aa29
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          
+Traceback (most recent call last):
+  File "/workspaces/lq-rosto-tut-1/b/w4.py", line 237, in <module>
+    t1()
+  File "/workspaces/lq-rosto-tut-1/b/w4.py", line 148, in t1
+    result1 = evm_api.transaction.get_wallet_transactions(
+  File "/usr/local/python/3.10.4/lib/python3.10/site-packages/moralis/evm_api/transaction/get_wallet_transactions.py", line 19, in get_wallet_transactions
+    api_response = api_instance.get_wallet_transactions(
+  File "/usr/local/python/3.10.4/lib/python3.10/site-packages/openapi_evm_api/paths/address/get.py", line 376, in get_wallet_transactions
+    return self._get_wallet_transactions_oapg(
+  File "/usr/local/python/3.10.4/lib/python3.10/site-packages/openapi_evm_api/paths/address/get.py", line 321, in _get_wallet_transactions_oapg
+    raise exceptions.ApiException(api_response=api_response)
+openapi_evm_api.exceptions.ApiException: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Date': 'Tue, 07 Mar 2023 22:51:51 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'CF-Ray': '7a4667cc4b4f897c-SIN', 'Access-Control-Allow-Origin': '*', 'Vary': 'Accept-Encoding', 'CF-Cache-Status': 'DYNAMIC', 'Content-Security-Policy': "default-src 'none'", 'X-Content-Type-Options': 'nosniff', 'X-Powered-By': 'Express', 'Server': 'cloudflare'})
+HTTP response body: b'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/v2/</pre>\n</body>\n</html>\n'
+
