@@ -61,6 +61,27 @@ class colors:
         cyan = '\033[46m'
         lightgrey = '\033[47m'
 
+# Function Install moralis and update python
+
+
+def install_pipy():
+    '''Updating python & installing moralis'''
+    print(colors.fg.red, """
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+1. Updating python to latest....
+3. Installing moralis 
+        """)
+    subprocess.run(['python', '-m', 'pip', 'install', '--upgrade', 'pip'])
+    subprocess.run(['pip', 'install', 'moralis'])
+    print(colors.fg.green, """ 
+DONE - DONE - DONE - DONE
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------""")
+
+
 # ANSI Print MEME
 
 # Draw Me
@@ -240,6 +261,7 @@ def t3():
 
 
 # Call Defined functions from above
+install_pipy()
 me_me()
 header()
 t1()
