@@ -116,10 +116,7 @@ def me_me():
 # Header Print Account Details Function
 
 
-
-
-
-## Header Function showing account details 
+# Header Function showing account details
 
 def header():
     '''Header Function that prints account details'''
@@ -130,13 +127,12 @@ def header():
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 Transaction Details for 
-Wallet     : 0xFB4086b4Ae138B2e91B64f47385ffdac8112f526
-PrivateKey : 0x8e6362e5d9a4a281680161a50c8fb5898929095b18ebbd58c716d844814cce24
+Wallet     : 0x326C885267bfC530964e49a76aD8d9A6FE871F9C
+PrivateKey : 0x45a8e7ed4f2f3bfbaf433fc7ef471cdf61e91d4135249b16aa51c39562b0aa29
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
           ''')
-
 
 
 ### Function 1 ###
@@ -145,7 +141,7 @@ PrivateKey : 0x8e6362e5d9a4a281680161a50c8fb5898929095b18ebbd58c716d844814cce24
 
 def t1():
     params1 = {
-        "address": "0xFB4086b4Ae138B2e91B64f47385ffdac8112f526",
+        "address": "",
         "chain": "sepolia",
     }
 
@@ -178,7 +174,7 @@ def t1():
 
 def t2():
     params2 = {
-        "address": "0xFB4086b4Ae138B2e91B64f47385ffdac8112f526",
+        "address": "",
         "chain": "mumbai",
     }
 
@@ -209,7 +205,7 @@ def t2():
 
 def t3():
     params3 = {
-        "address": "0xFB4086b4Ae138B2e91B64f47385ffdac8112f526",
+        "address": "",
         "chain": "bsc testnet",
     }
 
