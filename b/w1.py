@@ -10,6 +10,9 @@ https://docs.moralis.io/web3-data-api/evm/how-to-get-all-transactions-of-an-addr
 from pprint import pprint
 from moralis import evm_api
 import requests
+import os
+import subprocess
+
 
 api_key = "yL8KDGXJrrRXwRrgZMAEUvCUM13sCXmNuBwUYvAmMl2BVER5kNn8zz3CQmJv3b1A"
 
@@ -60,6 +63,27 @@ class colors:
         purple = '\033[45m'
         cyan = '\033[46m'
         lightgrey = '\033[47m'
+
+
+# Function Install moralis and update python
+
+def install_pipy():
+    '''Updating python & installing moralis'''
+    print(colors.fg.red, """
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+1. Updating python to latest....
+3. Installing moralis 
+        """)
+    subprocess.run(['python', '-m', 'pip', 'install', '--upgrade', 'pip'])
+    subprocess.run(['pip', 'install', 'moralis'])
+    print(colors.fg.green, """ 
+DONE - DONE - DONE - DONE
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------""")
+
 
 ### Function 1 ###
 ### Print transactions in from sepolia network ###
@@ -235,6 +259,7 @@ def t3():
 
 
 # Call Defined functions from above
+install_pipy()
 me_me()
 header()
 t1()
